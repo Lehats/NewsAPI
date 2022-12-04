@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NewsAPI</name>
+    </assembly>
+    <members>
+        <member name="M:NewsAPI.Controllers.NewsController.GetNewsArticles(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Allows you to fetch news articles based on keywords.
+            </summary>
+            <param name="keywords">Filter for title, description or content of the news article.
+            Use commas to separate multiple keywords. Text between commas is one keyword and must match the result exactly. Only one keyword must occur in the article to be returned.
+            </param>
+            <param name="authorName">Filter for author's name. If provided, must match exactly.</param>
+            <param name="amount">If provided, returns the first N filtered news articles.</param>
+        </member>
+        <member name="M:NewsAPI.Controllers.NewsController.GetNewsArticlesByTitle(System.String)">
+            <summary>
+            Allows you to fetch news articles with a specific title.
+            </summary>
+            <param name="title">Filter for title of the news article.
+            Title must match the result exactly.
+            </param>
+        </member>
+    </members>
+</doc>
